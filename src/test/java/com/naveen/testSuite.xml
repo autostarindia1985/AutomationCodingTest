@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="E2E Suite">
+
+        <parameter name="browsers" value="firefox"/>
+        	            
+	           	
+	   <test name="Tests in Firefox">                   
+        <classes>
+            <class name="E2ETEST"/>
+        </classes>
+
+    </test>        
+	          
+	         
+    
+
+    <test name="Tests in Chrome">
+
+        <parameter name="browsers" value="chrome"/>
+
+        <classes>
+            <class name="E2ETEST">
+            <methods>
+               <include name=".*orderFromRestaurant.*"/>
+            </methods>
+            
+            </class>
+        </classes>
+
+    </test>
+
+</suite>

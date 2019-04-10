@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [E2E Suite]">
+  <parameter name="browsers" value="firefox"/>
+  <test thread-count="5" name="Tests in Firefox(failed)">
+    <classes>
+      <class name="E2ETEST">
+        <methods>
+          <include name="tearDown"/>
+          <include name="orderFromRestaurant"/>
+          <include name="afterClassMethod"/>
+          <include name="beforeClassMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- E2ETEST -->
+    </classes>
+  </test> <!-- Tests in Firefox(failed) -->
+  <test thread-count="5" name="Tests in Chrome(failed)">
+    <parameter name="browsers" value="chrome"/>
+    <classes>
+      <class name="E2ETEST">
+        <methods>
+          <include name="tearDown"/>
+          <include name="orderFromRestaurant"/>
+          <include name="afterClassMethod"/>
+          <include name="beforeClassMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- E2ETEST -->
+    </classes>
+  </test> <!-- Tests in Chrome(failed) -->
+</suite> <!-- Failed suite [E2E Suite] -->

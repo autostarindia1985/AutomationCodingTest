@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Swiggy TestSuite]">
+  <parameter name="buildingAddress" value="Indiranagar , Bengaluru"/>
+  <parameter name="password" value="abcdefg"/>
+  <parameter name="exactLocation" value="Indiranagar, Bengaluru, Karnataka, India"/>
+  <parameter name="restaurantName" value="Bite Me"/>
+  <parameter name="mobileNumber" value="9110956783"/>
+  <parameter name="searchQuery" value="Indiranagar , Bengaluru"/>
+  <parameter name="name" value="abc abc"/>
+  <parameter name="paymentMethod" value="Indiranagar , Bengaluru"/>
+  <parameter name="landmarkAddress" value="Indiranagar , Bengaluru"/>
+  <parameter name="browsers" value="firefox"/>
+  <parameter name="email" value="abc@def.com"/>
+  <test thread-count="5" name="Tests in Firefox(failed)">
+    <classes>
+      <class name="AllTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="orderFromRestaurantWithSingleOutlet" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="afterClassMethod"/>
+          <include name="beforeClassMethod"/>
+        </methods>
+      </class> <!-- AllTests -->
+    </classes>
+  </test> <!-- Tests in Firefox(failed) -->
+</suite> <!-- Failed suite [Swiggy TestSuite] -->
